@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  outline: 10vmin solid red;
+  background-color: rgb(112, 112, 112);
+}
+
+.container {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  height: 41.5vmin;
+  width: 42vmin;
+  border-radius: 50%;
+  background-color: rgb(15, 210, 174);
+  overflow: hidden;
+}
+
+.hairs {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vmin;
+}
+
+.top {
+  height: 5vmin;
+  width: 10vmin;
+  background-color: rgb(48, 47, 47);
+  border-radius: 3vmin 3vmin 0 0;
+  position: absolute;
+  border: 0.38vmin solid black;
+  margin-top: -13vmin;
+}
+.middle {
+  height: 4.5vmin;
+  width: 13vmin;
+  background-color: rgb(48, 47, 47);
+  position: absolute;
+  border-radius: 2vmin 2vmin 0 0;
+  border: 0.41vmin solid black;
+  margin-top: -9vmin;
+}
+
+.bottom {
+  height: 19vmin;
+  width: 21vmin;
+  background-color: rgb(48, 47, 47);
+  position: absolute;
+  margin-top: -5.5vmin;
+  border-radius: 6.5vmin 6.5vmin 0 0;
+  border: 0.51vmin solid black;
+}
+
+span.leftBox {
+  height: 13vmin;
+  width: 14.3vmin;
+  background-color: rgb(48, 47, 47);
+  position: absolute;
+  margin-top: 10vmin;
+  margin-left: -10.5vmin;
+  border: 0.61vmin solid black;
+  rotate: 15deg;
+  border-top: none;
+  border-right: none;
+  z-index: 2;
+  border-radius: 0 0 0 1.8vmin;
+}
+
+span.rightBox {
+  height: 13vmin;
+  width: 15.38vmin;
+  background-color: rgb(48, 47, 47);
+  position: absolute;
+  margin-top: 10vmin;
+  margin-left: 9.5vmin;
+  border: 0.61vmin solid black;
+  rotate: -15deg;
+  border-top: none;
+  border-left: none;
+  z-index: 2;
+  border-radius: 0 0 1.8vmin 0;
+}
+
+.face {
+  height: 19vmin;
+  width: 16vmin;
+  background-color: rgb(98, 192, 255);
+  position: absolute;
+  z-index: 4;
+  margin-top: 4vmin;
+  margin-left: 2.2vmin;
+  border-radius: 3vmin 3vmin 8vmin 8vmin;
+  border: 0.41vmin solid black;
+}
+
+.centerBoxHair {
+  height: 4vmin;
+  width: 4vmin;
+  background-color: rgb(48, 47, 47);
+  position: absolute;
+  margin-top: 1.8vmin;
+  rotate: 45deg;
+  z-index: 5;
+  margin-left: 8vmin;
+  border-radius: 0% 0% 2vmin 0%;
+  border: 0.31vmin solid black;
+  border-top: none;
+  border-left: none;
+}
+
+.whiteLine {
+  height: 0.8vmin;
+  background-color: white;
+  position: absolute;
+  border-radius: 5vmin;
+  border: 0.31vmin solid black;
+}
+
+.whiteLine:nth-child(1) {
+  width: 3vmin;
+  left: 6vmin;
+  margin-top: 2.3vmin;
+}
+.whiteLine:nth-child(2) {
+  width: 4vmin;
+  left: 5.5vmin;
+  margin-top: 3vmin;
+}
+.whiteLine:nth-child(3) {
+  width: 5vmin;
+  left: 5vmin;
+  margin-top: 3.7vmin;
+}
+
+.tilakOval {
+  height: 3.2vmin;
+  width: 0.41vmin;
+  background-color: rgb(228, 100, 2);
+  border-radius: 8vmin;
+  position: absolute;
+  margin-top: 1.8vmin;
+  margin-left: 7.3vmin;
+}
+
+.leftEye {
+  font-size: 4vmin;
+  font-family: cursive;
+  font-weight: 900;
+  rotate: 90deg;
+  position: absolute;
+  top: 4.8vmin;
+  left: 3.7vmin;
+}
+
+.rightEye {
+  font-size: 4vmin;
+  font-family: cursive;
+  font-weight: 900;
+  rotate: 90deg;
+  position: absolute;
+  top: 4.8vmin;
+  left: 11.3vmin;
+}
+
+.lip {
+  font-size: 5vmin;
+  font-family: cursive;
+  font-weight: 900;
+  rotate: 90deg;
+  position: absolute;
+  top: 11vmin;
+  left: 7.6vmin;
+}
+
+.leftEar {
+  height: 5vmin;
+  width: 2vmin;
+  background-color: rgb(98, 192, 255);
+  position: absolute;
+  margin-left: -16vmin;
+  margin-top: 4vmin;
+  border-radius: 10vmin;
+  border: 0.41vmin solid black;
+}
+
+.rightEar {
+  height: 5vmin;
+  width: 2.4vmin;
+  background-color: rgb(98, 192, 255);
+  position: absolute;
+  rotate: 180deg;
+  margin-left: 16vmin;
+  margin-top: 4vmin;
+  border-radius: 10vmin;
+  border: 0.41vmin solid black;
+}
+
+.neck {
+  height: 6vmin;
+  width: 10vmin;
+  background-color: rgb(98, 192, 255);
+  position: absolute;
+  margin-top: 14vmin;
+  border: 0.51vmin solid black;
+  border-radius: 0 0 1.9vmin 1.9vmin;
+  z-index: 2;
+}
+
+.chest {
+  height: 23vmin;
+  width: 39vmin;
+  background-color: rgb(98, 192, 255);
+  z-index: 2;
+  margin-top: 19.4vmin;
+  border-radius: 13vmin;
+  border: 0.5vmin solid black;
+  overflow: hidden;
+}
+
+.snakeFace {
+  height: 7.5vmin;
+  width: 7vmin;
+  background-color: #da5503;
+  border-radius: 4vmin 4vmin 8vmin 8vmin;
+  position: absolute;
+  margin-top: 5vmin;
+  margin-left: -29vmin;
+  border: 0.4vmin solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.snakeFlat {
+  height: 4.5vmin;
+  width: 4.5vmin;
+  background-color: #ff6200;
+  border: 0.41vmin solid rgb(0, 0, 0);
+  border-radius: 4vmin 4vmin 9vmin 9vmin;
+  z-index: 4;
+  margin-top: -0.21vmin;
+}
+.eyes {
+  position: absolute;
+  font-size: 5vmin;
+  margin-top: -2.5vmin;
+  z-index: 4;
+}
+
+.tongue {
+  position: absolute;
+  font-size: 4vmin;
+  font-weight: bolder;
+  margin-top: 1vmin;
+  border: 0.41vmin solid rgb(0, 0, 0);
+  border-top: none;
+  border-bottom: none;
+  z-index: 3;
+}
+.snakePipe {
+  height: 8vmin;
+  width: 14vmin;
+  border: 2.22vmin solid #da5503;
+  position: absolute;
+  left: 2vmin;
+  top: 4vmin;
+  border-radius: 5vmin;
+  z-index: 2;
+  border-top: none;
+  border-right: none;
+}
+.snakeOnNeck {
+  height: 6vmin;
+  width: 13vmin;
+  border-radius: 50%;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 14.9vmin;
+  border: 2vmin solid #da5503;
+  z-index: 3;
+}
+
+.yellowLong {
+  height: 100%;
+  width: 14vmin;
+  background-color: yellow;
+  margin-left: 19vmin;
+  clip-path: polygon(27% -4%, 93% 0%, 100% 68%, -16% 131%);
+  border-left: 0.12vmin solid black;
+}
+
+.dots {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dots:nth-child(1) {
+  height: 2vmin;
+  width: 2vmin;
+  margin-top: 1vmin;
+  border: 0.61vmin solid black;
+  margin-left: 10vmin;
+}
+
+.dots:nth-child(2) {
+  height: 2vmin;
+  width: 2vmin;
+  border: 0.61vmin solid black;
+  margin-top: 5vmin;
+  margin-left: 7vmin;
+}
+.dots:nth-child(3) {
+  height: 2vmin;
+  width: 2vmin;
+  border: 0.61vmin solid black;
+  margin-top: 1vmin;
+  margin-left: 4vmin;
+}
+.dots:nth-child(4) {
+  height: 2vmin;
+  width: 2vmin;
+  border: 0.61vmin solid black;
+  margin-top: 9vmin;
+  margin-left: 3vmin;
+}
+.dots:nth-child(5) {
+  height: 2vmin;
+  width: 2vmin;
+  border: 0.61vmin solid black;
+  margin-top: 7vmin;
+  margin-left: 11vmin;
+}
+.dots:nth-child(6) {
+  height: 2vmin;
+  width: 2vmin;
+  border: 0.61vmin solid black;
+  margin-top: 10vmin;
+  margin-left: 8vmin;
+}
+.dots:nth-child(7) {
+  height: 2vmin;
+  width: 2vmin;
+  border: 0.61vmin solid black;
+  margin-top: 14vmin;
+  margin-left: 3.5vmin;
+}
+
+.garland {
+  height: 19vmin;
+  width: 16vmin;
+  border: 0.6vmin solid black;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -26vmin;
+  margin-left: 11vmin;
+  z-index: -1;
+}
+
+.g {
+  height: 2.3vmin;
+  width: 2.3vmin;
+  background-color: rgb(130, 28, 0);
+  border-radius: 50%;
+  border: 0.51vmin solid black;
+  position: absolute;
+}
+
+.g:nth-child(1) {
+  margin-top: 3vmin;
+}
+.g:nth-child(2) {
+  margin-top: 5vmin;
+  margin-left: -1vmin;
+}
+.g:nth-child(3) {
+  margin-top: 7.2vmin;
+  margin-left: -1.5vmin;
+}
+.g:nth-child(4) {
+  margin-top: 9.2vmin;
+  margin-left: -1.3vmin;
+}
+.g:nth-child(5) {
+  margin-top: 11.2vmin;
+  margin-left: -0.6vmin;
+}
+.g:nth-child(6) {
+  margin-top: 13.2vmin;
+  margin-left: 0.3vmin;
+}
+.g:nth-child(7) {
+  margin-top: 15vmin;
+  margin-left: 1.7vmin;
+}
+.g:nth-child(8) {
+  margin-top: 16.2vmin;
+  margin-left: 3.5vmin;
+}
+.g:nth-child(9) {
+  margin-top: 16.6vmin;
+  margin-left: 5.8vmin;
+}
+
+.moon {
+  height: 8vmin;
+  width: 8vmin;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin-top: -13vmin;
+  margin-left: -10vmin;
+}
+
+.moonHide {
+  height: 8vmin;
+  width: 8vmin;
+  border-radius: 50%;
+  background-color: rgb(112, 112, 112);
+  position: absolute;
+  margin-top: -15vmin;
+  margin-left: -14vmin;
+}
